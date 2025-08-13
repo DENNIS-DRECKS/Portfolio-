@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="Portfolio-styles.css">
+</head>
+<body>
+    <!-------Header secton-------->
+    <div id="header">
+        <div class="container">
+            <div class="nav-box">
+                <nav>
+                
+                   <div class="logo-position">
+                    <h1 class="logo"><span class="d">D</span>RECKS</h1>
+                
+                   </div>
+                <div class="nav-position">
+                  <div >
+                    <ul  id="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Fortfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <i class="fa-solid fa-square-xmark" 
+                        onclick="closeMenu()"
+                        ></i>
+                    </ul>
+                  </div>
+                    <i class="fa-solid fa-bars"
+                    onclick="openMenu()"
+                    ></i>
+                    
+                </div>
+                
+                </nav>
+          
+
+            </div>
+            <div class="header-text">
+                
+                <h1>Hello, I'm <span>Dennis </span>  <br></h1>  
+                <h1 class="typing">a web developer from Kenya</h1>
+                <p>Front-end Dev</p>
+            </div>
+        </div>
+         
+        
+    </div>
+
+
+
+    
+
+
+    <!-------about <section------> 
+
+
+    <div class="about">
+        <div class="container">
+            <h1 class="about-me">About Me</h1>
+            <div class="about-container">
+                
+                <div class="about-image">
+                    <img src="professional_enhanced_image-removebg-preview.png" alt="">
+                </div>
+                <div class="about-text">
+                   
+                    <p>
+                        Dennis Kisuko <br>
+                        Frontend Developer | Problem Solver |Civil Engineering Student <br>
+                        I craft responsive, user-friendly websites with 
+                        <b>HTML, CSS, & JavaScript</b>. Passionate about clean UI, smooth UX, and bringing ideas to life. <br>
+                        Currently leveling up in JavaScript → Next stop: React.
+
+                    </p>
+                    <div class="skills-section">
+                        <h1 class="tab-links active-link" onclick="pagedisplay(event,'skills')">Skills</h1>
+                        <h1 class="tab-links" onclick="pagedisplay(event,'experience')">Experience</h1>
+                    </div>
+                    <div class="tab-text active-tab" id="skills">
+                        <ul>
+                            <li><span class="tech">Frontend Development</span><br>
+                                <br>
+                                <span id="tech">HTML  CSS  JavaScript</span><br>
+                                <br>
+                               => Responsive Design 
+                                <br>
+                                <br>
+                               => Building Custom UI Components
+                                 </li>
+            
+                            <li><span class="tech">Tools & Platform</span> <br> <br>=> Live Server | VS Code | GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="tab-text" id="experience">
+                        <ul>
+                            <li><span class="tech "> Personal Projects</span><br>
+                                <h3>WEtube- Youtube inspired Web app</h3><br>
+                                <h3>Memory Gallery Page</h3><br>
+                                <h3>Custom Login Pages</h3>
+
+                            </li>
+                            <li><span class="tech">Ongoing Learning Experience</span><br>
+                                <h3>Building real world projects</h3>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------my services section--------- -->
+     <div class="services">
+        <div class="container">
+            <div class="services-container">
+                <h1 class="about-me">My Services</h1>
+                <div class="card-container">
+                    <div class="service-card">
+                        <span><i class="fa-solid fa-code"></i></span>
+                        <h3>CodeCraft Websites</h3>
+                        <p>Crafting responsive, interactive websites that bring ideas to life using HTML, CSS, and JavaScript. Performance-first.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="service-card">
+                        <span><i class="fa-solid fa-laptop"></i></span>
+                        <h3>User-First Design</h3>
+                        <p>Designing intuitive layouts and user journeys that make users stay,smile and scroll.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="service-card">
+                        <span><i class="fa-brands fa-pix"></i></span>
+                        <h3>Frontend Engineering</h3>
+                        <p>Translating designs into pixel-perfect code. Animations, logic, and responsiveness — all from scratch with clean JavaScript.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     </div>
+     <!-- ------my work section--------- -->
+     <div class="my-work">
+        <div class="container">
+            <h1 class="about-me">My Work</h1>
+            <div class="images-container">
+                
+                <div class="images">
+                    <img src="work 5.jpg" alt="">
+                    <div>
+                        <h3>Interactive Websites</h3>
+                    <p>I build Fully responsive and interactive websites.Focused on performance, structure, and smooth user interactions.</p>
+                    </div>
+
+                </div>
+                <div class="images">
+                    <img src="work 4.jpg" alt="">
+                    <div>
+                    <h3>Modern Landing Page</h3>
+                    <p>Designed with empathy and clarity,every layout and element aligns with real user behavior, ensuring great navigation and engagement.</p>
+                    </div>
+
+                </div>
+                <div class="images">
+                    <img src="work.jpg" alt="">
+                    <div>
+                    <h3>Frontend Engineering</h3>
+                    <p>Engineered pixel-perfect interfaces powered by dynamic JavaScript interactions and responsive grids for seamless user experiences across devices.</p>
+                    </div>
+
+                </div>
+            </div>
+            <a href="" class="learn-more">Learn More</a>
+
+        </div>
+     </div>
+     <!-- -------Contact section-------- -->
+      <div class="Contact-me">
+        <div class="container">
+            <h1 class="about-me">Contact Me</h1>
+            <div class="about-container">
+                <div class="left-side">
+                    <p><span>Email:</span>dreckssuave@gmail.com</p>
+                    <p><span>Phone:</span>+254790098289</p>
+                </div>
+
+
+                <div class="right-side">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="7" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+
+
+                </div>
+               
+
+
+
+            </div>
+        </div>
+      </div>
+      <div class="footer-message">
+        <p>&copy;2025 Made by Dennis Kisuko</p>
+      </div>
+      
+
+
+
+>
+<script src="portfolio.js"></script
+</body>
+</html>
