@@ -15,7 +15,7 @@ body{
     
     height: 100vh;
     width: 100%;
-    background-image: url('web-back.jpg');
+    background-image: url('assets/images/web-back.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -151,7 +151,7 @@ body{
     
 }
 .about-image{
-    flex-basis: 35 %;
+    flex-basis: 35%;
     
 
 }
