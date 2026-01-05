@@ -460,6 +460,11 @@ body{
     transform: scaleY(1.2);
 
 }
+#confirm{
+    font-size: 1.2rem;
+    color: #F39237;
+    font-weight: 500;
+}
 .footer-message{
     width: 100%;
     background-color: #Fff;
