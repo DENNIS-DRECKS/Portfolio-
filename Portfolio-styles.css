@@ -285,72 +285,111 @@ body{
 
 
 /* -------my work section--------*/
-
-
-.images-container{
-    display: flex;
-    border: 1px solid #ffffff86;
-    border-radius: 30px;
-    gap: 40px;
-    margin: 60px 0px;
-}
-.images{
-    width: 80%;
-    padding: 20px;
-    position: relative;
-    text-align: center;
-}
-.images div{
-    /* position: absolute;
-    top: 30%;
-    left: 0; */
-    cursor: pointer;
-    padding: 20px;
-    background-color: #f3c79d18;
-
-    
-} 
-.images div:hover{
-    
-
-}
-.images img{
-    width: 100%;
-    height: 24rem;
-    border-radius: 30px;
-    object-fit: cover;
-    object-position: center;
-    cursor: pointer;
-    transition: 0.9s;
-    
-    
-
-}
-.images img:hover{
-    transform: scale(1.1,1.1);
-
-}
-.images h3{
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 2rem;
-    cursor: pointer;
+.my-work {
+  padding: 5rem 0;
+  background: #f8f8f856;
 }
 
-.learn-more{
-    text-decoration: none;
-    background-color: #F39237;
-    font-size: 1.4rem;
-    padding: 10px;
-    color: #fff;
-    padding: 15px;
-    border-radius: 10px;
+.my-work .about-me {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #BF1363;
+}
 
+.section-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  color:#fff;
+  font-size: 1rem;
 }
-.learn-more:hover{
-    color: #F39237;
-    background-color: white;
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
+.work-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.work-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+.work-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.work-card:hover img {
+  transform: scale(1.08);
+}
+.work-content {
+  padding: 1.5rem;
+}
+
+.work-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+  color:#F39237;
+}
+
+.work-content p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.work-tags {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #222;
+  background: #eee;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  letter-spacing: 0.4px;
+}
+.case-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid #111;
+  transition: opacity 0.3s ease;
+}
+
+.case-btn:hover {
+  opacity: 0.6;
+}
+
+.learn-more {
+  display: block;
+  width: fit-content;
+  margin: 3rem auto 0;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.learn-more:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+
 
 
 /* ------ Contact page--------*/
@@ -438,6 +477,174 @@ body{
 /* mobile sidebar */
 .fa-square-xmark,.fa-bars{
     display: none;
+}
+/* ================================
+   CASE STUDY – GLOBAL STYLES
+================================ */
+
+.case-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #e5e8eb;
+    line-height: 1.75;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.case-header {
+    margin-bottom: 4rem;
+}
+
+.case-header h1 {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+    color: #F39237;
+}
+
+.case-header p {
+    font-size: 1.1rem;
+    max-width: 720px;
+    color: #888a8d;
+}
+
+
+
+/* ================================
+   MAIN CONTENT
+================================ */
+
+.case-study {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+/* ================================
+   CONTENT SECTIONS
+================================ */
+.case-section{
+    margin-bottom: 15px;
+}
+
+.case-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    color: #BF1363;
+}
+
+.case-section p {
+    font-size: 1.4rem;
+    color: #ffffff9d;
+    max-width: 850px;
+}
+
+.case-section ul {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.case-section li {
+    margin-bottom: 0.6rem;
+    color: #fff;
+}
+
+/* ================================
+   IMAGE / PREVIEW
+================================ */
+
+.case-image {
+    margin-top: 2rem;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.case-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ================================
+   ACTION BUTTONS
+================================ */
+
+.case-actions {
+    display: flex;
+    gap: 40px;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.case-actions a {
+    text-decoration: none;
+    padding: 0.55rem 1.3rem;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #F39237;
+    background-color: #080808;
+    font-size: 1.2rem;
+    transition: all 0.25s ease;
+}
+
+
+
+/* ================================
+   RESPONSIVE – TABLET
+================================ */
+
+@media (max-width: 900px) {
+    .case-study {
+        padding: 3rem 1.25rem;
+    }
+
+    .case-meta {
+        gap: 1.5rem;
+    }
+
+    .case-section h2 {
+        font-size: 1.35rem;
+    }
+}
+
+/* ================================
+   RESPONSIVE – MOBILE
+================================ */
+
+@media (max-width: 600px) {
+    .case-hero h1 {
+        font-size: 2rem;
+    }
+
+    .case-hero p {
+        font-size: 1rem;
+    }
+
+    .case-meta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .case-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .case-actions a {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width:600px){
@@ -562,4 +769,30 @@ body{
     
 
 
+}
+
+
+/* work section responsive */
+@media (max-width: 1024px) {
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-card img {
+    height: 200px;
+  }
+
+  .my-work .about-me {
+    font-size: 2rem;
+  }
+
+  .section-intro {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
 }
